@@ -35,24 +35,7 @@ VIDEO
 
 
 SECTION 3: JOURNEY FROM SPRING JDBC TO JPA
-Introduction to Journey from JDBC To JPA
-VIDEO
-01:30
-Step 01 - Setting up a project with JDBC, JPA, H2 and Web Dependencies
-VIDEO
-05:32
-Step 02 - Launching up H2 Console
-VIDEO
-05:01
-Step 03 - Creating a Database Table in H2
-VIDEO
-03:54
-Step 04 - Populate data into Person Table
-VIDEO
-05:21
-Step 05 - Implement findAll persons Spring JDBC Query Method
-VIDEO
-06:15
+
 Step 06 - Execute the findAll method using CommandLineRunner
 VIDEO
 05:45
@@ -238,9 +221,9 @@ VIDEO
 Step 33 - ManyToOne Mapping - Wrapping up
 VIDEO
 09:28
-Step 34 - ManyToMany Mapping - Table Design
-VIDEO
-02:59
+
+//===============================================================================================================
+
 Step 35 - ManyToMany Mapping - Adding Annotations on Entities
 VIDEO
 04:44
