@@ -64,6 +64,14 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
 
+        <!-- Ribbon -->
+        <!-- >2.0.0M4 dependency name is spring-cloud-starter- netflix-ribbon-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <!--<artifactId>spring-cloud-starter-ribbon</artifactId> -->
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+        </dependency>
+
     </dependencies>
 
 	<dependencyManagement>
