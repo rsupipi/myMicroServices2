@@ -19,7 +19,7 @@ public class ExchangeValue {
     private Long id;
 
     @Column(name = "currency_from")
-    private String from;
+    private String from;    // we can not have from column in SQL
 
     @Column(name = "currency_to")
     private String to;

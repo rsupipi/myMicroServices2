@@ -51,3 +51,10 @@ Resource changed to EntityModel
 Resources changed to CollectionModel
 PagedResources changed to PagedModel
 ResourceAssembler changed to RepresentationModelAssembler
+
+#404 error
+
+## Service side
+
+check the `@RestController` annotation
+

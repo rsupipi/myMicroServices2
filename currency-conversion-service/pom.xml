@@ -55,7 +55,16 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-	</dependencies>
+
+        <!-- Add Feing -->
+        <!-- >2.0.0M4 dependency name is spring-cloud-starter-openfeign-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<!--<artifactId>spring-cloud-starter-feign</artifactId> -->
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+
+    </dependencies>
 
 	<dependencyManagement>
 		<dependencies>
