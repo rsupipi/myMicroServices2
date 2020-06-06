@@ -5,18 +5,18 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.6.RELEASE</version>
+		<version>2.3.0.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.pipi</groupId>
-	<artifactId>currency-conversion-service</artifactId>
+	<artifactId>netflix-zuul-api-gateway-srever</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>currency-conversion-service</name>
+	<name>netflix-zuul-api-gateway-srever</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
-		<spring-cloud.version>Hoxton.SR3</spring-cloud.version>
+		<spring-cloud.version>Hoxton.SR5</spring-cloud.version>
 	</properties>
 
 	<dependencies>
@@ -25,23 +25,18 @@
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-config</artifactId>
+			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
 		</dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
@@ -55,32 +50,7 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-
-        <!-- Add Feing -->
-        <!-- >2.0.0M4 dependency name is spring-cloud-starter-openfeign-->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<!--<artifactId>spring-cloud-starter-feign</artifactId> -->
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-		</dependency>
-
-        <!-- Ribbon -->
-        <!-- >2.0.0M4 dependency name is spring-cloud-starter-netflix-ribbon-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <!--<artifactId>spring-cloud-starter-ribbon</artifactId> -->
-            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-        </dependency>
-
-		<!-- Eureka Naming server-->
-		<!-- >2.0.0M4 dependency name is spring-cloud-starter-eureka-->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<!--<artifactId>spring-cloud-starter-eureka</artifactId> -->
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-		</dependency>
-
-    </dependencies>
+	</dependencies>
 
 	<dependencyManagement>
 		<dependencies>

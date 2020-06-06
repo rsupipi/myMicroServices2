@@ -67,6 +67,15 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
+		<!-- Eureka Naming server-->
+		<!-- >2.0.0M4 dependency name is spring-cloud-starter-eureka-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<!--<artifactId>spring-cloud-starter-eureka</artifactId> -->
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<dependencyManagement>
