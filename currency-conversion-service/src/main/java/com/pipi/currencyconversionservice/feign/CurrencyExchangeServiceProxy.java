@@ -10,11 +10,12 @@ package com.pipi.currencyconversionservice.feign;
  * Need to create faign proxy to be able to talk to external microservices
  */
 //@FeignClient(name = "currency-exchange-service", url = "localhost:8000") // in ribbon we can run this in different env
-@FeignClient(name = "currency-exchange-service")
+//@FeignClient(name = "currency-exchange-service")  // default feign configuration
+@FeignClient(name = "netflix-zuul-api-gateway-srever")    // config zuul api gateway
 @RibbonClient(name = "currency-exchange-service")
 public interface CurrencyExchangeServiceProxy {
 
-    @GetMapping("/currency-exchange3/from/{from}/to/{to}")
+    @GetMapping("currency-exchange-service/currency-exchange3/from/{from}/to/{to}")
     /** now this is not needed */
 //  public CurrencyConversionBean retriveExchangeValue3(@PathVariable("from") String from, @PathVariable("to") String to);
     public CurrencyConversionBean retriveExchangeValue3(@PathVariable String from, @PathVariable String to);
